@@ -1,3 +1,13 @@
+<?php
+$testo = 'paragrafo';
+$lunghezza = strlen($testo);
+
+$secondaParola = $_GET['badword'];
+$sostituzione = str_replace($secondaParola, '***', $secondaParola);
+
+echo $secondaParola . 'sostituita con' . ' '. $sostituzione;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +19,7 @@
 <body>
 
 
-  
+  <p> Questo è il <?php echo $testo. ' ' .'La lunghezza è di'. ' '. $lunghezza ?> </p>
 
 </body>
 </html>
